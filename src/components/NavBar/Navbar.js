@@ -24,11 +24,12 @@ const Navbar = () => {
         bg={colorMode==="dark"?"#29232e":"#F5F5F5"}
         style={{ position: 'fixed', bottom: '15px' }}
         borderRadius="7px"
+        zIndex="1"
       >
         <NavButton label="Home" icon={<FiHome />} />
         <NavButton label="About" icon={<AiOutlineQuestion />} />
         <NavButton label="Project" icon={<FiCodesandbox />} />
-        <NavButton label="Achievments" icon={<FiAward />} />
+        <NavButton label="Achievments and Certifications" icon={<FiAward />} />
         <NavButton label="Educational Background" icon={<FiBook />} />
         <NavButton label="Contact Me" icon={<FiPhone />} />
         <ColorModeSwitcher /> 

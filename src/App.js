@@ -4,6 +4,7 @@ import Navbar from './components/NavBar/Navbar';
 import { Home } from './components/Home/Home';
 import About from './components/About/About';
 import { Projects } from './components/Projects/Projects';
+import { Achievements } from './components/Achievements/Achievements';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <About />
       <Projects />
+      <Achievements />
     </ChakraProvider>
   );
 }

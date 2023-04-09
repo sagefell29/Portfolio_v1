@@ -1,6 +1,6 @@
 import {
   Image,
-  Container,
+
   Text,
   HStack,
   useColorMode,

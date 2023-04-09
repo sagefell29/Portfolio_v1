@@ -1,10 +1,10 @@
-import { Box, Text, VStack } from '@chakra-ui/react';
+import { Box, Heading, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
 export const About = () => {
   return (
-    <VStack m="5" p="5" align="center" h="100vh" fontSize="16">
-      <Text fontSize="45">About</Text>
+    <VStack m="5" p="5" align="center" fontSize="16">
+      <Heading m={5}>About</Heading>
       <Text m="5" align="left" pl="30" pr="30">
         Hey, this is <b>Rishi Kaushal</b>, an Aspiring software engineer. I am currently a <b>Sophomore at VIT Vellore</b> in the branch <b>Computer Science Engineering with Bioinformatics.</b> I have worked extensively in various domains of the software development field and am always on the lookout for new opportunities to learn and innovate.
       </Text>

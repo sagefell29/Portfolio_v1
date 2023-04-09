@@ -17,7 +17,6 @@ export const ProjectButton = props => {
           href={`${props.link}`}
           isExternal
           fontSize="xl"
-          m={5}
         >
           {props.icon}
         </Button>

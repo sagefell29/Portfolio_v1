@@ -1,21 +1,25 @@
-import { Box, VStack } from '@chakra-ui/react';
+import { Box, Flex, Heading } from '@chakra-ui/react';
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import { projects } from '../../Data/ProjectData';
+import { projects } from '../../Data/ComponentData/ProjectData';
 
 export const Projects = () => {
   return (
-    <VStack align="stretch" spacing={5}p={5}>
-      {projects.map((proj, i) => {
-        return (
-          <ProjectCard
-            text={proj.text}
-            link={proj.link}
-            repo={proj.repo}
-            title={proj.title}
-          />
-        );
-      })}
-    </VStack>
+    <Box align="stretch" p={5} justifyContent='center'>
+      <Heading align="center" m={5}>My Projects</Heading>
+      <Flex gap={6} flexWrap='wrap' w='full' justifyContent="center">
+        {projects.map((proj, i) => {
+          return (
+            <ProjectCard
+              text={proj.text}
+              link={proj.link}
+              repo={proj.repo}
+              title={proj.title}
+              img={proj.img}
+            />
+          );
+        })}
+      </Flex>
+    </Box>
   );
 };
