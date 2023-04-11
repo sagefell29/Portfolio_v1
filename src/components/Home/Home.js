@@ -17,22 +17,14 @@ export const Home = () => {
       z-index={1}
       position="relative"
     >
-      <VStack
-        m="5"
-        p="15"
-      >
+      <VStack m="5" p="15">
         <Image
           src={P}
           h="30vh"
           alt="Rishi Kaushal's Profile Pic"
           borderRadius="25"
         />
-        <Stack
-          p="5"
-          align="center"
-          w="full"
-          borderRadius={7}
-        >
+        <Stack p="5" align="center" w="full" borderRadius={7}>
           <Heading>
             <HStack>
               <Transition />
@@ -66,7 +58,11 @@ export const Home = () => {
             link="https://leetcode.com/rishi29kaushal/"
             icon={<SiLeetcode />}
           />
-          <LinkButton label="Instagram" link="" icon={<SiInstagram />} />
+          <LinkButton
+            label="Instagram"
+            link="https://www.instagram.com/friendly_neighbourhood_goblin/"
+            icon={<SiInstagram />}
+          />
           <LinkButton
             label="Facebook"
             link="https://www.facebook.com/rishi.kaushal.969/"
