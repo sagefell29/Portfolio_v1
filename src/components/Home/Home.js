@@ -2,10 +2,10 @@ import { Image, Text, HStack, Stack, VStack, Heading } from '@chakra-ui/react';
 import { FiLinkedin, FiFacebook, FiGithub, FiMail } from 'react-icons/fi';
 import { SiLeetcode, SiInstagram } from 'react-icons/si';
 import React from 'react';
-import P from '../../Data/Images/Pro_p.jpg';
+import P from '../../Data/Images/Pro_p.webp';
 import { TypeWriter1, TypeWriter2 } from './Typed';
 import { LinkButton } from './LinkButton';
-import Transition from './Transition/Transition';
+import Transition from './Transition';
 
 export const Home = () => {
   return (
@@ -18,7 +18,6 @@ export const Home = () => {
       position="relative"
     >
       <VStack
-        // style={colorMode === 'dark' ? St1 : St2}
         m="5"
         p="15"
       >
@@ -31,13 +30,12 @@ export const Home = () => {
         <Stack
           p="5"
           align="center"
-          // style={colorMode === 'dark' ? St1 : St2}
           w="full"
           borderRadius={7}
         >
           <Heading>
             <HStack>
-              <TypeWriter2 />
+              <Transition />
             </HStack>
           </Heading>
           <Heading fontSize="3xl" fontWeight="750" m={0}>

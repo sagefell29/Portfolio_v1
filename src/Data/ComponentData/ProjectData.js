@@ -1,9 +1,9 @@
-import Clock from "../Images/Clock.png";
-import RH from "../Images/RH.png";
-import SC from "../Images/SC.png";
-import IWP from "../Images/IWP.png";
-import WA from "../Images/WA.png";
-import R from "../Images/Research.png";
+import Clock from "../Images/Clock.webp";
+import RH from "../Images/RH.webp";
+import SC from "../Images/SC.webp";
+import IWP from "../Images/IWP.webp";
+import WA from "../Images/WA.webp";
+import R from "../Images/Research.webp";
 
 export const projects = [
     {

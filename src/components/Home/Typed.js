@@ -22,24 +22,3 @@ export const TypeWriter1 = () => {
     </Container>
   );
 };
-
-export const TypeWriter2 = () => {
-  return (
-    <Container m={0}>
-        <Typed
-        strings={[
-          "Hello",
-          'Salut',
-          "Olá",
-          "Здравствуйте",
-          "こんにちは", 
-          "Ciao",
-          "你好"
-        ]}
-        typeSpeed={60}
-        backSpeed={60}
-        loop
-      />
-    </Container>
-  );
-};

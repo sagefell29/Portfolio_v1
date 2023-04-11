@@ -1,6 +1,6 @@
-import CC1 from "../Images/CC1.jpg";
-import CC2 from "../Images/CC2.jpg";
-import SIH from "../Images/SIH.jpg";
+import CC1 from "../Images/CC1.webp";
+import CC2 from "../Images/CC2.webp";
+import SIH from "../Images/SIH.webp";
 
 export const achievements = [
     {
