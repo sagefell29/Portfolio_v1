@@ -22,7 +22,7 @@ const Contact = () => {
     >
       <Heading align="center">Get in Touch</Heading>
       <Text align="center" pr={10} pl={10}>
-        Now that you have seen everything I have done, wanna start talking. Get
+        Now that you have seen everything I have done, wanna start talking? Get
         in touch at my socials or send a mail, I am always looking for new
         opportunities.
       </Text>
