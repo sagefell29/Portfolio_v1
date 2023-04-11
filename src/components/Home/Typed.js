@@ -2,20 +2,42 @@ import { Container } from '@chakra-ui/react';
 import React from 'react';
 import Typed from 'react-typed';
 
-export const TypeWriter = () => {
+export const TypeWriter1 = () => {
   return (
     <Container>
-        I am{' '}
+      <u>
         <Typed
         strings={[
-          ' a Computer Science Student.',
-          " a Web Developer.",
-          " a SIH '22 Winner",
-          " a budding Software Engineer.", 
-          " open to work."
+          ' Computer Science Student',
+          " Web Developer",
+          " SIH '22 Winner",
+          " Budding Software Engineer", 
+          " Open to work"
         ]}
-        typeSpeed={25}
-        backSpeed={25}
+        typeSpeed={20}
+        backSpeed={20}
+        loop
+      />
+      </u>
+    </Container>
+  );
+};
+
+export const TypeWriter2 = () => {
+  return (
+    <Container m={0}>
+        <Typed
+        strings={[
+          "Hello",
+          'Salut',
+          "Olá",
+          "Здравствуйте",
+          "こんにちは", 
+          "Ciao",
+          "你好"
+        ]}
+        typeSpeed={60}
+        backSpeed={60}
         loop
       />
     </Container>

@@ -1,22 +1,13 @@
-import {
-  Image,
-  Text,
-  HStack,
-  useColorMode,
-  Box,
-  VStack,
-} from '@chakra-ui/react';
+import { Image, Text, HStack, Stack, VStack, Heading } from '@chakra-ui/react';
 import { FiLinkedin, FiFacebook, FiGithub, FiMail } from 'react-icons/fi';
 import { SiLeetcode, SiInstagram } from 'react-icons/si';
 import React from 'react';
 import P from '../../Data/Images/Pro_p.jpg';
-import { TypeWriter } from './Typed';
+import { TypeWriter1, TypeWriter2 } from './Typed';
 import { LinkButton } from './LinkButton';
-import { St1, St2 } from '../St1';
+import Transition from './Transition/Transition';
 
 export const Home = () => {
-  const { colorMode } = useColorMode();
-
   return (
     <VStack
       id="Home"
@@ -31,28 +22,31 @@ export const Home = () => {
         m="5"
         p="15"
       >
-        <Box>
-          <Image
-            src={P}
-            h="30vh"
-            alt="Rishi Kaushal's Profile Pic"
-            borderRadius="25"
-          />
-        </Box>
-        <Box
+        <Image
+          src={P}
+          h="30vh"
+          alt="Rishi Kaushal's Profile Pic"
+          borderRadius="25"
+        />
+        <Stack
           p="5"
           align="center"
           // style={colorMode === 'dark' ? St1 : St2}
           w="full"
           borderRadius={7}
         >
-          <Text fontSize="xl" fontWeight="750">
-            Hey, I am Rishi.👋
-          </Text>
+          <Heading>
+            <HStack>
+              <TypeWriter2 />
+            </HStack>
+          </Heading>
+          <Heading fontSize="3xl" fontWeight="750" m={0}>
+            I am Rishi.
+          </Heading>
           <Text fontSize="xl">
-            <TypeWriter />
+            <TypeWriter1 />
           </Text>
-        </Box>
+        </Stack>
         <HStack justifyContent="center" borderRadius="7px" w="fit-content">
           <LinkButton
             label="GitHub"
