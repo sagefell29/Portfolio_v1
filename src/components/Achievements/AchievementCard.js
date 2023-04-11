@@ -19,7 +19,6 @@ export const AchievementCard = (props) => {
         <CardBody>
           <Image src={props.img} alt={`${props.title}'s Image`} mb={6} />
           <Text>{props.text}</Text>
-          <Divider mt={5}/>
         </CardBody>
       </Card>
     )
