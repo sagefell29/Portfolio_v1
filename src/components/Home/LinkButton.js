@@ -19,7 +19,7 @@ export const LinkButton = props => {
         as={Link}
         href={`${props.link}`}
         isExternal
-        fontSize="xl"
+        fontSize={{md: "xl", sm:"sm"}}
       >
         {props.icon}
       </Button>

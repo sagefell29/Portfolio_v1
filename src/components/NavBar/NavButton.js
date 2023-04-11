@@ -10,10 +10,10 @@ export const NavButton = props => {
         fontSize="lg"
         as={Link}
         href={`${props.link}`}
-        _hover={{
-          transform: 'scale(1.4)',
+        _hover={{ md:
+          {transform: 'scale(1.4)',
           boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.75)',
-          transition: 'all 0.1s ease-in-out',
+          transition: 'all 0.1s ease-in-out'}
         }}
       >
         {' '}

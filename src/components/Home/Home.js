@@ -3,7 +3,7 @@ import { FiLinkedin, FiFacebook, FiGithub, FiMail } from 'react-icons/fi';
 import { SiLeetcode, SiInstagram } from 'react-icons/si';
 import React from 'react';
 import P from '../../Data/Images/Pro_p.webp';
-import { TypeWriter1, TypeWriter2 } from './Typed';
+import { TypeWriter1 } from './Typed';
 import { LinkButton } from './LinkButton';
 import Transition from './Transition';
 
