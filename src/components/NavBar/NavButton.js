@@ -11,7 +11,7 @@ export const NavButton = props => {
         as={Link}
         href={`${props.link}`}
         _hover={{ lg:
-          {transform: 'scale(1.4)',
+          {transform: 'scale(1.2)',
           boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.75)',
           transition: 'all 0.1s ease-in-out'}
         }}

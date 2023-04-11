@@ -21,10 +21,10 @@ const Navbar = () => {
         style={{ position: 'fixed', bottom: '15px' }}
         borderRadius="7px"
         zIndex={2}
-        _hover={{
-          transform: 'scale(1.2)',
+        _hover={{ lg: {
+          transform: 'scale(1.1)',
           boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.75)',
-          transition: 'all 0.1s ease-in-out',
+          transition: 'all 0.1s ease-in-out'}
         }}
       >
         <NavButton label="Home" icon={<FiHome />} link="#Home" />
