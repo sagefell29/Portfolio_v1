@@ -2,12 +2,23 @@ import { Box, Flex, Heading } from '@chakra-ui/react';
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import { projects } from '../../Data/ComponentData/ProjectData';
+import { St1 } from '../St1';
 
 export const Projects = () => {
   return (
-    <Box align="stretch" p={5} justifyContent='center'>
-      <Heading align="center" m={5}>My Projects</Heading>
-      <Flex gap={6} flexWrap='wrap' w='full' justifyContent="center">
+    <Box
+      id="Projects"
+      align="stretch"
+      p={5}
+      justifyContent="center"
+      m={5}
+      z-index={1}
+      position="relative"
+    >
+      <Heading align="center" m={5}>
+        My Projects
+      </Heading>
+      <Flex gap={6} flexWrap="wrap" w="full" justifyContent="center">
         {projects.map((proj, i) => {
           return (
             <ProjectCard

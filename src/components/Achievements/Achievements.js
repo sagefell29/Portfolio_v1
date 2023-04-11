@@ -5,7 +5,14 @@ import { achievements } from '../../Data/ComponentData/AchievementData';
 
 export const Achievements = () => {
   return (
-    <Box align="stretch" p={5} justifyContent="center">
+    <Box
+      id="Achievements"
+      align="stretch"
+      p={5}
+      justifyContent="center"
+      z-index={1}
+      position="relative"
+    >
       <Heading align="center" m={5}>
         My Achievements
       </Heading>

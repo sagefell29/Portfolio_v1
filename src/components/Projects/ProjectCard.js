@@ -1,27 +1,34 @@
 import {
   Card,
   CardBody,
+  CardFooter,
   CardHeader,
   Divider,
   Heading,
   HStack,
   Image,
   Text,
-  useColorMode
+  useColorMode,
 } from '@chakra-ui/react';
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import { ProjectButton } from './ProjectButton';
+import { St1, St2 } from "../St1"
 
 const ProjectCard = props => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <Card
-      w="sm"
       m="5"
       p="5"
-      _hover={{ transform: "scale(1.05)", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.75)", transition: "all 0.2s ease-in-out", bg: colorMode === 'dark' ? '#425069' : '#9f9f9f'}}
+      w= {{'lg': '35vw', 'sm': 'sm'}}
+      _hover={{
+        transform: 'scale(1.05)',
+        transition: 'all 0.2s ease-in-out',
+        bg: colorMode === 'dark' ? '#425069' : '#9f9f9f',
+      }}
+      style={colorMode === 'dark' ? St1 : St2}
     >
       <CardHeader>
         <Heading align="center">{props.title}</Heading>
@@ -31,8 +38,10 @@ const ProjectCard = props => {
         <Image src={props.img} alt={`${props.title}'s Image`} mb={6} />
         {/* <Divider /> */}
         <Text>{props.text}</Text>
-        <Divider mt={5} size='2px' />
-        <HStack justify="center" spacing={10} p={2} mt={5}>
+      </CardBody>
+      <Divider />
+      <CardFooter>
+        <HStack spacing={5} w="full" justifyContent="center">
           <ProjectButton
             label="Github Link"
             link={props.repo}
@@ -44,7 +53,7 @@ const ProjectCard = props => {
             icon={<FiExternalLink />}
           />
         </HStack>
-      </CardBody>
+      </CardFooter>
     </Card>
   );
 };

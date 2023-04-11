@@ -8,12 +8,14 @@ export const ColorModeSwitcher = props => {
   const SwitchIcon = useColorModeValue(FiMoon, FiSun);
 
   return (
-    <Tooltip label={`Switch to ${text} mode`}>
+    <Tooltip arrow label={`Switch to ${text} mode`}>
     <IconButton
       bg={colorMode==="dark"?"#29232e":"#F5F5F5"} 
-        _hover={
-          {bg:colorMode==="dark"?"#3F444E":"#CACBCD"}
-        }
+        _hover={{
+          transform: 'scale(1.4)',
+          // boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.75)',
+          transition: 'all 0.1s ease-in-out'
+        }}
       variant="ghost"
       onClick={toggleColorMode}
       icon={<SwitchIcon />}
