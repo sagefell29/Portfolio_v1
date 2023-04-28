@@ -46,9 +46,13 @@ const EducationItem = props => {
             <b>Location:</b> {props.location}
           </Text>
           <Text fontSize="sm" pl={1}>
+            <b>{props.grade > 10
+              ? `Percentage:`
+              : `CGPA`}
+              </b>
             {props.grade > 10
-              ? `Percentage: ${props.grade}%`
-              : `CGPA: ${props.grade}`}
+              ? ` ${props.grade}%`
+              : ` ${props.grade}`}
           </Text>
         </VStack>
       </HStack>
