@@ -2,7 +2,6 @@ import { Box, Flex, Heading } from '@chakra-ui/react';
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import { projects } from '../../Data/ComponentData/ProjectData';
-import { St1 } from '../St1';
 
 export const Projects = () => {
   return (
@@ -12,7 +11,7 @@ export const Projects = () => {
       p={5}
       justifyContent="center"
       m={5}
-      z-index={1}
+      z-index={0}
       position="relative"
     >
       <Heading align="center" m={5}>

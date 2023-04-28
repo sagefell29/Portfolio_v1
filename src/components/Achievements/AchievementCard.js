@@ -10,6 +10,7 @@ export const AchievementCard = (props) => {
       <Card
         m="5"
         p="5"
+        z-index={0}
         w= {{'lg': '35vw', 'sm': 'sm'}}
         style={colorMode === 'dark' ? St1 : St2}
         _hover={{ transform: "scale(1.05)", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.75)", transition: "all 0.2s ease-in-out", bg: colorMode === 'dark' ? '#425069' : '#9f9f9f'}}

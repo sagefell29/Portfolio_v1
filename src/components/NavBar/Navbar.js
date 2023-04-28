@@ -35,7 +35,7 @@ const Navbar = () => {
           icon={<FiAward />}
           link="#Achievements"
         />
-        <NavButton label="Educational Background" icon={<FiBook />} link="" />
+        <NavButton label="Educational Background" icon={<FiBook />} link="#Education" />
         <NavButton label="Contact Me" icon={<FiPhone />} link="#Contact" />
         <ColorModeSwitcher />
       </HStack>

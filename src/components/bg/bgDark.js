@@ -17,7 +17,7 @@ function ParticleBackgroundDark() {
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      z-index={-1}
+      z-index={0}
       options={{
         background: {
           color: {

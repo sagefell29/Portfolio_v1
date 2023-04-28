@@ -23,6 +23,7 @@ const ProjectCard = props => {
       m="5"
       p="5"
       w= {{'lg': '35vw', 'sm': 'sm'}}
+      z-index={1}
       _hover={{
         transform: 'scale(1.05)',
         transition: 'all 0.2s ease-in-out',

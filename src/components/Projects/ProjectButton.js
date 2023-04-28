@@ -3,7 +3,7 @@ import React from "react";
 
 
 export const ProjectButton = props => {
-    const { colorMode, toggleColorMode } = useColorMode();
+    const { colorMode } = useColorMode();
     
     if (!props.link) return null;
     

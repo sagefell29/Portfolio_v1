@@ -17,8 +17,8 @@ const Contact = () => {
       m={5}
       z-index={1}
       position="relative"
-      // bgColor={colorMode === "light" ? "rgba(255, 255, 255, 0.67)" : "rgba(0, 0, 0, 0.1)"}
       style={colorMode === 'dark' ? St1 : St2}
+      borderRadius={7}
     >
       <Heading align="center">Get in Touch</Heading>
       <Text align="center" pr={10} pl={10}>
@@ -37,7 +37,11 @@ const Contact = () => {
           link="mailto: rishi29work@gmail.com"
           icon={<FiMail />}
         />
-        <LinkButton label="Instagram" link="" icon={<SiInstagram />} />
+        <LinkButton
+          label="Instagram"
+          link="https://www.instagram.com/friendly_neighbourhood_goblin/"
+          icon={<SiInstagram />}
+        />
         <LinkButton
           label="Facebook"
           link="https://www.facebook.com/rishi.kaushal.969/"

@@ -1,7 +1,15 @@
+import { ChakraProvider, theme } from '@chakra-ui/react';
+import Navbar from './components/NavBar/Navbar';
+import { Home } from './components/Home/Home';
+import About from './components/About/About';
+import { Projects } from './components/Projects/Projects';
+import { Achievements } from './components/Achievements/Achievements';
+import Contact from './components/Contact/Contact';
+import { MyParticleBackground } from './components/bg/bgSwitch';
+import { Education } from './components/Education/Education';
 import { ColorModeScript } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import App from './App';
 import reportWebVitals from './External/reportWebVitals';
 import * as serviceWorker from './External/serviceWorker';
 import "./index.css"
@@ -12,7 +20,16 @@ const root = ReactDOM.createRoot(container);
 root.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+    <ChakraProvider theme={theme}>
+      <MyParticleBackground />
+      <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Achievements />
+      <Education />
+      <Contact />
+    </ChakraProvider>
   </StrictMode>
 );
 
