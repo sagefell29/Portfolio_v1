@@ -29,9 +29,9 @@ const Navbar = () => {
       >
         <NavButton label="Home" icon={<FiHome />} link="#Home" />
         <NavButton label="About" icon={<AiOutlineQuestion />} link="#About" />
-        <NavButton label="Project" icon={<FiCodesandbox />} link="#Projects" />
+        <NavButton label="Projects" icon={<FiCodesandbox />} link="#Projects" />
         <NavButton
-          label="Achievments and Certifications"
+          label="Achievements and Certifications"
           icon={<FiAward />}
           link="#Achievements"
         />

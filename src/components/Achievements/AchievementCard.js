@@ -21,7 +21,7 @@ export const AchievementCard = (props) => {
         <Divider/>
         <CardBody>
           <Image src={props.img} alt={`${props.title}'s Image`} mb={6} />
-          <Text>{props.text}</Text>
+          <Text dangerouslySetInnerHTML={{ __html: props.text }} />
         </CardBody>
         <Divider />
       </Card>
