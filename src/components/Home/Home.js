@@ -1,5 +1,5 @@
 import { Image, Text, HStack, Stack, VStack, Heading } from '@chakra-ui/react';
-import { FiLinkedin, FiFacebook, FiGithub, FiMail } from 'react-icons/fi';
+import { FiLinkedin, FiBriefcase, FiGithub, FiMail } from 'react-icons/fi';
 import { SiLeetcode, SiInstagram } from 'react-icons/si';
 import React from 'react';
 import P from '../../Data/Images/Pro_p.webp';
@@ -64,9 +64,9 @@ export const Home = () => {
             icon={<SiInstagram />}
           />
           <LinkButton
-            label="Facebook"
-            link="https://www.facebook.com/rishi.kaushal.969/"
-            icon={<FiFacebook />}
+            label="Resume"
+            link="https://drive.google.com/file/d/1RiTya05drFYD50tXj4pNdvYby8oT-BU1/view?usp=drive_link"
+            icon={<FiBriefcase />}
           />
         </HStack>
       </VStack>

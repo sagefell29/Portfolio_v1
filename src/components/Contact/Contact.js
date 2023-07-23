@@ -1,6 +1,6 @@
 import { useColorMode, Heading, HStack, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
-import { FiFacebook, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
+import { FiBriefcase, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
 import { SiInstagram } from 'react-icons/si';
 import { LinkButton } from '../Home/LinkButton';
 import { St1, St2 } from '../St1';
@@ -43,9 +43,9 @@ const Contact = () => {
           icon={<SiInstagram />}
         />
         <LinkButton
-          label="Facebook"
-          link="https://www.facebook.com/rishi.kaushal.969/"
-          icon={<FiFacebook />}
+          label="Resume"
+          link="https://drive.google.com/file/d/1RiTya05drFYD50tXj4pNdvYby8oT-BU1/view?usp=drive_link"
+          icon={<FiBriefcase />}
         />
         <LinkButton
           label="+91 9410963475"
