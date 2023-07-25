@@ -1,25 +1,25 @@
-import { Heading, Text, VStack, useColorMode } from '@chakra-ui/react';
+import { Box, Heading, Text, VStack, useColorMode } from '@chakra-ui/react';
 import React from 'react';
 import { St1, St2 } from '../St1';
 
 export const About = () => {
   const { colorMode } = useColorMode();
-  const width = window.innerwidth;
 
   return (
-    <VStack m={5} id="About">
+    <Box m={5} id="About" mb={20} z-index={0} position="relative" textAlign={"center"}>
+      <Heading m={5} z-index={2}>
+        About Me
+      </Heading>
       <VStack
         m="5"
         p="5"
         align="center"
         fontSize="16"
         justifyContent="center"
-        z-index={1}
         position="relative"
         borderRadius={7}
         style={colorMode === 'dark' ? St1 : St2}
       >
-        <Heading m={5}>About Me</Heading>
         <Text m="5" align="left" pl="30" pr="30" fontSize="xl">
           Hey, this is <b>Rishi Kaushal</b>, an Aspiring software engineer. I am
           currently a <b>Sophomore at VIT Vellore</b> in the branch{' '}
@@ -59,7 +59,7 @@ export const About = () => {
           <b>strong candidate for any software engineering role.</b>
         </Text>
       </VStack>
-    </VStack>
+    </Box>
   );
 };
 

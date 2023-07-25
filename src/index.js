@@ -12,7 +12,8 @@ import React, { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
 import reportWebVitals from './External/reportWebVitals';
 import * as serviceWorker from './External/serviceWorker';
-import "./index.css"
+import './index.css';
+import Experience from './components/Experience/Experience';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -25,6 +26,7 @@ root.render(
       <Navbar />
       <Home />
       <About />
+      <Experience />
       <Projects />
       <Achievements />
       <Education />

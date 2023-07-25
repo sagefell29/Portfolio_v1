@@ -1,13 +1,24 @@
-import { Image, Text, HStack, Stack, VStack, Heading } from '@chakra-ui/react';
-import { FiLinkedin, FiBriefcase, FiGithub, FiMail } from 'react-icons/fi';
+import {
+  Image,
+  Text,
+  HStack,
+  Stack,
+  VStack,
+  Heading,
+  useColorMode,
+} from '@chakra-ui/react';
+import { FiLinkedin, FiFileText, FiGithub, FiMail } from 'react-icons/fi';
 import { SiLeetcode, SiInstagram } from 'react-icons/si';
 import React from 'react';
 import P from '../../Data/Images/Pro_p.webp';
 import { TypeWriter1 } from './Typed';
 import { LinkButton } from './LinkButton';
 import Transition from './Transition';
+import ColorModeSwitcher from '../../ColorModeSwitcher';
 
 export const Home = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <VStack
       id="Home"
@@ -37,7 +48,7 @@ export const Home = () => {
             <TypeWriter1 />
           </Text>
         </Stack>
-        <HStack justifyContent="center" borderRadius="7px" w="fit-content">
+        <HStack justifyContent="center" borderRadius="7px" w="fit-content" spacing={3}>
           <LinkButton
             label="GitHub"
             link="https://github.com/sagefell29"
@@ -49,25 +60,16 @@ export const Home = () => {
             icon={<FiLinkedin />}
           />
           <LinkButton
-            label="Mail"
-            link="mailto: rishi29work@gmail.com"
-            icon={<FiMail />}
-          />
-          <LinkButton
             label="LeetCode"
             link="https://leetcode.com/rishi29kaushal/"
             icon={<SiLeetcode />}
           />
           <LinkButton
-            label="Instagram"
-            link="https://www.instagram.com/friendly_neighbourhood_goblin/"
-            icon={<SiInstagram />}
-          />
-          <LinkButton
             label="Resume"
             link="https://drive.google.com/file/d/1RiTya05drFYD50tXj4pNdvYby8oT-BU1/view?usp=drive_link"
-            icon={<FiBriefcase />}
+            icon={<FiFileText />}
           />
+          <ColorModeSwitcher />
         </HStack>
       </VStack>
     </VStack>

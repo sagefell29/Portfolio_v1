@@ -15,7 +15,7 @@ export const Projects = () => {
       position="relative"
     >
       <Heading align="center" m={5}>
-        My Projects
+        Projects
       </Heading>
       <Flex gap={6} flexWrap="wrap" w="full" justifyContent="center">
         {projects.map((proj, i) => {

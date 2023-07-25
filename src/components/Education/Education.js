@@ -14,7 +14,7 @@ export const Education = () => {
       mb={16}
     >
       <Heading align="center" m={5}>
-        My Educational Background
+        Education
       </Heading>
       <Stack
         justifyContent="center"
@@ -22,7 +22,7 @@ export const Education = () => {
         position="relative"
         gap={3}
       >
-        {education.map((Edu, i) => {
+        {education.map((Edu) => {
           return (
             <EducationItem
               name={Edu.name}

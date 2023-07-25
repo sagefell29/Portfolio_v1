@@ -14,7 +14,7 @@ export const Achievements = () => {
       position="relative"
     >
       <Heading align="center" m={5}>
-        My Achievements and Certifications
+        Achievements and Certifications
       </Heading>
       <Flex gap={9} flexWrap="wrap" w="full" justifyContent="center">
         {achievements.map((ach, i) => {

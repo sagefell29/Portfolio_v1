@@ -5,10 +5,11 @@ import {
   FiCodesandbox,
   FiAward,
   FiBook,
+  FiBriefcase,
 } from 'react-icons/fi';
 import { AiOutlineQuestion } from 'react-icons/ai';
 import { NavButton } from './NavButton';
-import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+// import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -29,6 +30,7 @@ const Navbar = () => {
       >
         <NavButton label="Home" icon={<FiHome />} link="#Home" />
         <NavButton label="About" icon={<AiOutlineQuestion />} link="#About" />
+        <NavButton label="Experience" icon ={<FiBriefcase />} link="#Experience"/>
         <NavButton label="Projects" icon={<FiCodesandbox />} link="#Projects" />
         <NavButton
           label="Achievements and Certifications"
@@ -37,7 +39,7 @@ const Navbar = () => {
         />
         <NavButton label="Educational Background" icon={<FiBook />} link="#Education" />
         <NavButton label="Contact Me" icon={<FiPhone />} link="#Contact" />
-        <ColorModeSwitcher />
+        {/* <ColorModeSwitcher /> */}
       </HStack>
     </HStack>
   );
