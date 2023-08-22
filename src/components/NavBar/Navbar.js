@@ -10,7 +10,8 @@ import {
 import { AiOutlineQuestion } from 'react-icons/ai';
 import { NavButton } from './NavButton';
 import { St1, St2 } from '../St1';
-// import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+// import { ModeSwitcherComponent } from '../modeSwitcher/ModeSwitcherComponent';
+// import { ColorModeSwitcher } from '../modeSwitcher/ColorModeSwitcher.js';
 
 const Navbar = () => {
   const { colorMode } = useColorMode();
@@ -25,6 +26,7 @@ const Navbar = () => {
           position: 'fixed',
           bottom: '15px',
           ...(colorMode === 'dark' ? St1 : St2),
+          backdropFilter: 'blur(10px)',
         }}
         _hover={{
           lg: {

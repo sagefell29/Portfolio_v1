@@ -7,6 +7,7 @@ export const TypeWriter1 = () => {
     <Container>
       <u>
         <Typed
+        align='center'
         strings={[
           ' Computer Science Student',
           " Web Developer",

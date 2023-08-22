@@ -6,7 +6,7 @@ const ExperienceCard = props => {
   const { colorMode } = useColorMode();
 
   return (
-    <Box w = {{'lg': '35vw', 'sm': 'sm'}}>
+    <Box w={{ lg: '35vw', sm: 'sm' }}>
       <Stack
         p={3}
         style={colorMode === 'dark' ? St1 : St2}
@@ -36,16 +36,6 @@ const ExperienceCard = props => {
           <Text fontSize="sm" pl={1}>
             <b>Location:</b> {props.location}
           </Text>
-          {/* <Text
-            fontSize="sm"
-            pl={1}
-            _hover={{
-              fontWeight: 'bold',
-              textDecoration: 'underline',
-            }}
-          >
-            <a href={props.link}>Link</a>
-          </Text> */}
         </Stack>
       </Stack>
     </Box>

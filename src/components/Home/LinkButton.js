@@ -1,16 +1,21 @@
-import { Tooltip, Link, Button } from '@chakra-ui/react';
+import { Tooltip, Link, Button, useColorMode } from '@chakra-ui/react';
 import React from 'react';
 
 export const LinkButton = props => {
+  const { colorMode } = useColorMode();
+  const borderColor = colorMode === 'light' ? 'black' : 'white';
   return (
     <Tooltip label={props.label}>
       <Button
+        fontSize={{ md: 'lg', xs: 'xs' }}
         bg="transparent"
-        border="2px"
+        border = "2px solid transparent"
         as={Link}
         href={`${props.link}`}
         isExternal
-        fontSize="lg"
+        _hover={{
+          border: `2px solid ${borderColor}`, // Use the calculated border color on hover
+        }}
       >
         {props.icon}
       </Button>

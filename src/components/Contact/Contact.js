@@ -1,7 +1,7 @@
 import { useColorMode, Heading, HStack, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
-import { SiInstagram } from 'react-icons/si';
+import { SiInstagram, SiLeetcode } from 'react-icons/si';
 import { LinkButton } from '../Home/LinkButton';
 import { St1, St2 } from '../St1';
 
@@ -51,6 +51,11 @@ const Contact = () => {
           label="Phone: +91-9410963475"
           link="tel:91-9410963475"
           icon={<FiPhone />}
+        />
+        <LinkButton 
+          label="LeetCode"
+            link="https://leetcode.com/rishi29kaushal/"
+            icon={<SiLeetcode />}
         />
       </HStack>
     </Stack>

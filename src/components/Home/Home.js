@@ -7,13 +7,11 @@ import {
   Heading,
   useColorMode,
 } from '@chakra-ui/react';
-import { FiLinkedin, FiFileText, FiGithub } from 'react-icons/fi';
-import { SiLeetcode } from 'react-icons/si';
+import { FiFileText } from 'react-icons/fi';
 import React from 'react';
 import P from '../../Data/Images/Pro_p.webp';
 import { TypeWriter1 } from './Typed';
 import Transition from './Transition';
-import ColorModeSwitcher from '../../ColorModeSwitcher';
 import { St1, St2 } from '../St1';
 import { NavButton } from '../NavBar/NavButton';
 
@@ -57,26 +55,10 @@ export const Home = () => {
           style={colorMode === 'dark' ? St1 : St2}
         >
           <NavButton
-            label="GitHub"
-            link="https://github.com/sagefell29"
-            icon={<FiGithub />}
-          />
-          <NavButton
-            label="LinkedIn"
-            link="https://www.linkedin.com/in/rishi-kaushal-133246212/"
-            icon={<FiLinkedin />}
-          />
-          <NavButton
-            label="LeetCode"
-            link="https://leetcode.com/rishi29kaushal/"
-            icon={<SiLeetcode />}
-          />
-          <NavButton
             label="Resume"
             link="https://drive.google.com/file/d/1RiTya05drFYD50tXj4pNdvYby8oT-BU1/view?usp=drive_link"
             icon={<FiFileText />}
           />
-          <ColorModeSwitcher bg="transparent" border="0px"/>
         </HStack>
       </VStack>
     </VStack>

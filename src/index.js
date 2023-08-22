@@ -14,6 +14,7 @@ import reportWebVitals from './External/reportWebVitals';
 import * as serviceWorker from './External/serviceWorker';
 import './index.css';
 import Experience from './components/Experience/Experience';
+import { ModeSwitcherComponent } from './components/modeSwitcher/ModeSwitcherComponent';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -23,6 +24,7 @@ root.render(
     <ColorModeScript />
     <ChakraProvider theme={theme}>
       <MyParticleBackground />
+      <ModeSwitcherComponent />
       <Navbar />
       <Home />
       <About />

@@ -5,7 +5,7 @@ export const NavButton = props => {
   return (
     <Tooltip label={props.label}>
       <Button
-        fontSize="lg"
+        fontSize={{ md: 'lg', xs: 'xs' }}
         as={Link}
         href={`${props.link}`}
         bg="transparent"
