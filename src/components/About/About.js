@@ -20,7 +20,7 @@ export const About = () => {
         borderRadius={7}
         style={colorMode === 'dark' ? St1 : St2}
       >
-        <Text m="5" align="left" pl="30" pr="30" fontSize="xl">
+        <Text align="justify" pl="30" pr="30" fontSize="xl" mb={5}>
           Hey, this is <b>Rishi Kaushal</b>, an Aspiring software engineer. I am
           currently a <b>Sophomore at VIT Vellore</b> in the branch{' '}
           <b>Computer Science Engineering with Bioinformatics.</b> I have worked
@@ -46,7 +46,7 @@ export const About = () => {
         the software industry and I am{' '}
         <b>committed to continuing to develop and refine these skills.</b>
       </Text>} */}
-        <Text m="5" align="left" pl="30" pr="30" fontSize="xl">
+        <Text align="justify" pl="30" pr="30" fontSize="xl">
           As a fresher in the software engineering industry, I am{' '}
           <b>
             eager to apply my technical knowledge and practical experience to
