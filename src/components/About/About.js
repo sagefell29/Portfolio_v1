@@ -22,7 +22,7 @@ export const About = () => {
       >
         <Text align="justify" pl="30" pr="30" fontSize="xl" mb={5}>
           Hey, this is <b>Rishi Kaushal</b>, an Aspiring software engineer. I am
-          currently a <b>Sophomore at VIT Vellore</b> in the branch{' '}
+          currently a <b>Senior at VIT Vellore</b> in the branch{' '}
           <b>Computer Science Engineering with Bioinformatics.</b> I have worked
           extensively in various domains of the software development field and
           am always on the lookout for new opportunities to learn and innovate.
