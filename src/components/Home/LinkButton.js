@@ -4,6 +4,10 @@ import React from 'react';
 export const LinkButton = props => {
   const { colorMode } = useColorMode();
   const borderColor = colorMode === 'light' ? 'black' : 'white';
+  if (!props.link) {
+    return null;
+  }
+
   return (
     <Tooltip label={props.label}>
       <Button

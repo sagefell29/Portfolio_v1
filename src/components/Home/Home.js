@@ -6,6 +6,7 @@ import {
   VStack,
   Heading,
   useColorMode,
+  Button,
 } from '@chakra-ui/react';
 import { FiFileText } from 'react-icons/fi';
 import React from 'react';
@@ -13,7 +14,6 @@ import P from '../../Data/Images/Pro_p.webp';
 import { TypeWriter1 } from './Typed';
 import Transition from './Transition';
 import { St1, St2 } from '../St1';
-import { NavButton } from '../NavBar/NavButton';
 
 export const Home = () => {
   const { colorMode } = useColorMode();
@@ -33,6 +33,11 @@ export const Home = () => {
           h="30vh"
           alt="Rishi Kaushal's Profile Pic"
           borderRadius="25"
+          filter="grayscale(100%)"
+            transition="0.15s"
+            _hover={{
+                filter: "grayscale(0%)"
+            }}
         />
         <Stack p="5" align="center" w="full" borderRadius={7}>
           <Heading>
@@ -54,11 +59,18 @@ export const Home = () => {
           spacing={3}
           style={colorMode === 'dark' ? St1 : St2}
         >
-          <NavButton
-            label="Resume"
-            link="https://drive.google.com/file/d/1RiTya05drFYD50tXj4pNdvYby8oT-BU1/view?usp=drive_link"
-            icon={<FiFileText />}
-          />
+          <Button
+            fontSize={{ md: 'lg', xs: 'xs' }}
+            as="a"
+            target="_blank"
+            href={
+              'https://drive.google.com/file/d/1RiTya05drFYD50tXj4pNdvYby8oT-BU1/view?usp=drive_link'
+            }
+            bg="transparent"
+          >
+            Resume
+            <FiFileText style={{ margin: '0px 0px 0px 6px' }}/>
+          </Button>
         </HStack>
       </VStack>
     </VStack>

@@ -5,6 +5,7 @@ import IWP from '../Images/IWP.webp';
 import WA from '../Images/WA.webp';
 import R from '../Images/Research.webp';
 import MAPML from '../Images/MAPML.webp';
+import PORT from '../Images/Portfolio.webp'
 
 export const projects = [
   {
@@ -19,7 +20,7 @@ export const projects = [
     id: 1,
     title: 'ResearcHaven',
     text: 'A web application created for selecting research proposals for funding after filtering and processing them.',
-    link: 'https://webcrawlers.tech',
+    link: '',
     repo: 'https://github.com/sagefell29/ResearcHaven-SIH-BACKEND',
     img: RH,
   },
@@ -27,7 +28,7 @@ export const projects = [
     id: 2,
     title: 'SafeChain',
     text: 'A revolutionary password management web application that uses only a single field for user authentication.',
-    link: 'https://www.safechain.prasoon.codes/',
+    link: '',
     repo: 'https://github.com/sagefell29/Safe-Chain-Backend',
     img: SC,
   },
@@ -41,6 +42,14 @@ export const projects = [
   },
   {
     id: 4,
+    title: 'Portfolio',
+    text: "The portfolio you're on currently is also built from scratch completely on React.js.",
+    link: '',
+    img: PORT,
+    repo: 'https://github.com/sagefell29/Portfolio_v1',
+  },
+  {
+    id: 5,
     title: 'Bioinformatics Research Work',
     text: 'This is a collection of Python notebooks and data which compare the suitability of various ML and DL algorithms for Drug Discovery.',
     link: '',
@@ -48,7 +57,7 @@ export const projects = [
     img: R,
   },
   {
-    id: 5,
+    id: 6,
     title: 'Weather App in React',
     text: 'A simple weather app made in React using external APIs for location autofill and Weather data.',
     link: '',
@@ -56,7 +65,7 @@ export const projects = [
     repo: 'https://github.com/sagefell29/Weather-App',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Analog Clock in JS',
     text: 'A simple analog clock made in Vanilla JS.',
     link: '',

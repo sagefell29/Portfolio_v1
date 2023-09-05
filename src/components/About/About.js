@@ -6,7 +6,14 @@ export const About = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <Box m={5} id="About" mb={20} z-index={0} position="relative" textAlign={"center"}>
+    <Box
+      m={5}
+      id="About"
+      mb={20}
+      z-index={0}
+      position="relative"
+      textAlign={'center'}
+    >
       <Heading m={5} z-index={2}>
         About Me
       </Heading>
@@ -21,42 +28,36 @@ export const About = () => {
         style={colorMode === 'dark' ? St1 : St2}
       >
         <Text align="justify" pl="30" pr="30" fontSize="xl" mb={5}>
-          Hey, this is <b>Rishi Kaushal</b>, an Aspiring software engineer. I am
-          currently a <b>Senior at VIT Vellore</b> in the branch{' '}
-          <b>Computer Science Engineering with Bioinformatics.</b> I have worked
-          extensively in various domains of the software development field and
-          am always on the lookout for new opportunities to learn and innovate.
+          Hi, I'm <b>Rishi Kaushal</b>, an aspiring software engineer. I'm a{' '}
+          <b>Computer Science Engineering senior</b> at <b>VIT Vellore</b>. My
+          journey through the world of software has been dynamic, filled with
+          diverse experiences and endless curiosity. I thrive on opportunities
+          to innovate and expand my horizons.
         </Text>
-        {/* {width>{992} && <Text m="5" align="left" pl="30" pr="30" fontSize="xl">
-        Throughout my academic career, I have gained <b>hands-on experience</b>{' '}
-        in various programming languages and technologies, including Java,
-        Python, JavaScript, and React. I have always had a{' '}
-        <b>strong interest</b> in computer science and have been fascinated by
-        the endless possibilities that programming offers. This interest led me
-        to pursue my degree and I am now eager to{' '}
-        <b>turn my passion into a rewarding career.</b>
-      </Text>}
-      {width>'992px' && <Text m="5" align="left" pl="30" pr="30" fontSize="xl">
-        In addition to my technical skills, I possess{' '}
-        <b>strong communication, teamwork, and problem-solving skills.</b> I
-        have honed these skills through various group projects and internships,
-        where I have had the opportunity to work collaboratively with others to
-        solve complex problems. I believe that effective communication,
-        collaboration, and problem-solving are essential skills for success in
-        the software industry and I am{' '}
-        <b>committed to continuing to develop and refine these skills.</b>
-      </Text>} */}
+
+        <Text align="justify" pl="30" pr="30" fontSize="xl" pb={5}>
+          With a strong foundation in{' '}
+          <b>C++, Python, JavaScript, and the MERN Stack</b>, my academic
+          journey has honed my skills. I'm passionate about the vast
+          possibilities that programming offers, and I'm eager to transform this
+          passion into a fulfilling career.
+        </Text>
+
+        <Text align="justify" pl="30" pr="30" fontSize="xl" pb={5}>
+          Beyond my technical abilities, I possess{' '}
+          <b>strong communication, teamwork, and problem-solving skills</b>.
+          Collaborative projects and internships have equipped me to tackle
+          complex challenges effectively. I firmly believe that these skills are
+          pivotal in the software industry and I'm committed to their continuous
+          refinement.
+        </Text>
+
         <Text align="justify" pl="30" pr="30" fontSize="xl">
-          As a fresher in the software engineering industry, I am{' '}
-          <b>
-            eager to apply my technical knowledge and practical experience to
-            real-world projects.
-          </b>{' '}
-          I possess strong technical and non-technical skills, am committed to
-          continuous learning and growth, and am dedicated to working
-          collaboratively to solve complex problems. I believe that my passion
-          for software engineering and my eagerness to learn and grow make me a{' '}
-          <b>strong candidate for any software engineering role.</b>
+          As a fresh entrant in software engineering, I'm excited to apply my
+          knowledge and practical experience to real-world projects. With
+          unwavering commitment to learning, a passion for software engineering,
+          and an open mindset for growth, I'm poised to excel in any software
+          engineering role.
         </Text>
       </VStack>
     </Box>
