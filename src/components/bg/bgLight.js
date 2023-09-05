@@ -27,10 +27,6 @@ function ParticleBackgroundLight() {
         fpsLimit: 120,
         interactivity: {
           events: {
-            // onClick: {
-            //     enable: true,
-            //     mode: "push",
-            // },
             onHover: {
               enable: true,
               mode: 'repulse',
@@ -38,9 +34,6 @@ function ParticleBackgroundLight() {
             resize: true,
           },
           modes: {
-            // push: {
-            //   quantity: 2,
-            // },
             repulse: {
               distance: 50,
               duration: 0.1,
@@ -49,13 +42,13 @@ function ParticleBackgroundLight() {
         },
         particles: {
           color: {
-            value: '#1A202C',
+            value: '#283D3B',
           },
           links: {
-            color: '#3fa8ba',
+            color: '#197278',
             distance: 25,
             enable: true,
-            opacity: 0.3,
+            opacity: 0.5,
             width: 5,
           },
           collisions: {
@@ -79,7 +72,7 @@ function ParticleBackgroundLight() {
             value: 75,
           },
           opacity: {
-            value: 0.3,
+            value: 0.5,
           },
           shape: {
             type: 'circle',

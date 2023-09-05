@@ -27,10 +27,6 @@ function ParticleBackgroundDark() {
         fpsLimit: 120,
         interactivity: {
           events: {
-            // onClick: {
-            //     enable: true,
-            //     mode: "push",
-            // },
             onHover: {
               enable: true,
               mode: 'repulse',
@@ -38,9 +34,6 @@ function ParticleBackgroundDark() {
             resize: true,
           },
           modes: {
-            // push: {
-            //   quantity: 2,
-            // },
             repulse: {
               distance: 50,
               duration: 0.5,
@@ -55,7 +48,7 @@ function ParticleBackgroundDark() {
             color: '#3fa8ba',
             distance: 25,
             enable: true,
-            opacity: 0.3,
+            opacity: 0.5,
             width: 5,
           },
           collisions: {
@@ -79,7 +72,7 @@ function ParticleBackgroundDark() {
             value: 75,
           },
           opacity: {
-            value: 0.3,
+            value: 0.5,
           },
           shape: {
             type: 'circle',
