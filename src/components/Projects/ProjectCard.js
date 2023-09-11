@@ -24,9 +24,10 @@ const ProjectCard = props => {
       p="5"
       w= {{'lg': '35vw', 'sm': 'sm'}}
       z-index={1}
+      opacity="65%"
       _hover={{
-        transform: 'scale(1.05)',
-        transition: 'all 0.2s ease-in-out',
+        opacity: "100%",
+        transition: 'all 0.15s ease-in-out',
         bg: colorMode === 'dark' ? '#425069' : '#9f9f9f',
       }}
       style={colorMode === 'dark' ? St1 : St2}

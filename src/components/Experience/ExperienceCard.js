@@ -11,9 +11,10 @@ const ExperienceCard = props => {
         p={3}
         style={colorMode === 'dark' ? St1 : St2}
         borderRadius={7}
+        opacity='65%'
         _hover={{
-          transform: 'scale(1.05)',
-          transition: 'all 0.2s ease-in-out',
+          opacity:'100%',
+          transition: 'all 0.15s ease-in-out',
         }}
       >
         <Image borderRadius="10px" src={props.cert} alt={props.title} />
