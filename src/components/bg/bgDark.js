@@ -21,7 +21,7 @@ function ParticleBackgroundDark() {
       options={{
         background: {
           color: {
-            value: '#1A202C',
+            value: '#000000',
           },
         },
         fpsLimit: 120,

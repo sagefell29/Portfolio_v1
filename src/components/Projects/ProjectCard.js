@@ -24,7 +24,7 @@ const ProjectCard = props => {
       p="5"
       w= {{'lg': '35vw', 'sm': 'sm'}}
       z-index={1}
-      opacity="65%"
+      opacity="80%"
       _hover={{
         opacity: "100%",
         transition: 'all 0.15s ease-in-out',

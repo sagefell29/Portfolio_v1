@@ -21,7 +21,7 @@ export const AchievementCard = props => {
       z-index={0}
       w={{ lg: '35vw', sm: 'sm' }}
       style={colorMode === 'dark' ? St1 : St2}
-      opacity="65%"
+      opacity="80%"
       _hover={{
         boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.75)',
         opacity: '100%',

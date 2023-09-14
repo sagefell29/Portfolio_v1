@@ -17,7 +17,7 @@ const EducationItem = props => {
         p={3}
         style={colorMode === 'dark' ? St1 : St2}
         borderRadius={7}
-        opacity="65%"
+        opacity="80%"
         _hover={{
           opacity: "100%",
           transition: 'all 0.15s ease-in-out',
