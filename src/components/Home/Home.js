@@ -33,10 +33,10 @@ export const Home = () => {
           h="30vh"
           alt="Rishi Kaushal's Profile Pic"
           borderRadius="25"
-          filter="grayscale(100%)"
+          // filter="grayscale(100%)"
             transition="0.15s"
             _hover={{
-                filter: "grayscale(0%)"
+                filter: "grayscale(100%)"
             }}
         />
         <Stack p="5" align="center" w="full" borderRadius={7}>
