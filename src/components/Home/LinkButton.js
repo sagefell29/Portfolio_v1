@@ -12,6 +12,7 @@ export const LinkButton = props => {
     <Tooltip label={props.label}>
       <Button
         bg={colorMode === 'dark' ? '#1A202C' : '#FFFFFF'}
+        color="white"
         border="2px"
         // _hover={{ bg: colorMode === 'dark' ? '#3F444E' : '#CACBCD' }}
         as={Link}

@@ -40,6 +40,7 @@ const ProjectCard = props => {
       <Card
         m="5"
         p="5"
+        textColor='white'
         w={{ lg: '35vw', sm: 'sm' }}
         zIndex={isExpanded ? '10' : "0"}
         opacity='80%'

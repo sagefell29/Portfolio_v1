@@ -41,6 +41,7 @@ const EducationItem = ({ name, logo, degree, stream, date, location, grade }) =>
         boxShadow="lg"
         zIndex={isExpanded ? 10 : 0}
         transition="all 0.3s ease"
+        textColor='white'
         w="auto"
         onClick={() => setIsExpanded(true)} // Trigger expanded mode
         opacity='80%'
@@ -56,7 +57,7 @@ const EducationItem = ({ name, logo, degree, stream, date, location, grade }) =>
           alt={name}
           mr={4}
         />
-        <VStack align="start" spacing={1}>
+        <VStack align="start" spacing={1} textColor='white'>
           <Text fontSize="lg" fontWeight="bold">
             {name}
           </Text>

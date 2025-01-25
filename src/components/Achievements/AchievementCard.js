@@ -34,6 +34,7 @@ export const AchievementCard = props => {
       <Card
         m="5"
         p="5"
+        textColor='white'
         zIndex={isExpanded ? '10' : '0'}
         w={isExpanded ? '70vw' : { lg: '35vw', sm: 'sm' }}
         maxWidth="90vw"
