@@ -11,6 +11,7 @@ export const NavButton = ({ label, icon, path }) => {
         as={NavLink}
         to={path}
         exact="true"
+        color='#0a696c'
         bg="#29232e"
         _activeLink={activeStyle}
         fontSize={['sm', 'md', 'lg']}
