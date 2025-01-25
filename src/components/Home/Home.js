@@ -5,18 +5,6 @@ import {
   Stack,
   VStack,
   Heading,
-  useColorMode,
-  Button,
-} from '@chakra-ui/react';
-import { FiFileText } from 'react-icons/fi';
-import {
-  Image,
-  Text,
-  HStack,
-  Stack,
-  VStack,
-  Heading,
-  useColorMode,
   Button,
 } from '@chakra-ui/react';
 import { FiFileText } from 'react-icons/fi';
@@ -24,14 +12,9 @@ import React from 'react';
 import P from '../../Data/Images/Pro_p.webp';
 import { TypeWriter1 } from './Typed';
 import Transition from './Transition';
-import { St1, St2 } from '../St1';
-import { St1, St2 } from '../St1';
+import { St1 } from '../St1';
 
 export const Home = () => {
-  const { colorMode } = useColorMode();
-
-  const { colorMode } = useColorMode();
-
   return (
     <VStack
       id="Home"
