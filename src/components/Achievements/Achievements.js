@@ -9,14 +9,15 @@ export const Achievements = () => {
       id="Achievements"
       align="stretch"
       p={5}
+      mt={10}
       justifyContent="center"
       z-index={1}
       position="relative"
     >
       <Heading align="center" m={5}>
-        My Achievements
+        Achievements and Certifications
       </Heading>
-      <Flex gap={6} flexWrap="wrap" w="full" justifyContent="center">
+      <Flex gap={9} flexWrap="wrap" w="full" justifyContent="center">
         {achievements.map((ach, i) => {
           return (
             <AchievementCard text={ach.text} title={ach.title} img={ach.img} />

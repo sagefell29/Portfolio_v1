@@ -1,9 +1,4 @@
-import {
-  Tooltip,
-  useColorMode,
-  Link,
-  Button,
-} from '@chakra-ui/react';
+import { Tooltip, useColorMode, Link, Button } from '@chakra-ui/react';
 import React from 'react';
 
 export const LinkButton = props => {
@@ -12,13 +7,22 @@ export const LinkButton = props => {
   return (
     <Tooltip label={props.label}>
       <Button
-        bg = {colorMode === 'dark' ? '#1A202C' : '#FFFFFF'}
+        bg={colorMode === 'dark' ? '#1A202C' : '#FFFFFF'}
         border="2px"
         // _hover={{ bg: colorMode === 'dark' ? '#3F444E' : '#CACBCD' }}
         as={Link}
         href={`${props.link}`}
         isExternal
-        fontSize={{md: "xl", sm:"sm"}}
+        fontSize={{ md: 'xl', sm: 'sm' }}
+        style={{
+          backdropFilter: 'blur(3px)',
+          backgroundColor: 'transparent',
+        }}
+        opacity='60%'
+        _hover={{
+          opacity: '100%',
+          transition: 'all 0.15s ease-in-out',
+        }}
       >
         {props.icon}
       </Button>

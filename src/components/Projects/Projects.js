@@ -9,8 +9,9 @@ export const Projects = () => {
       id="Projects"
       align="stretch"
       p={5}
-      justifyContent="center"
       m={5}
+      mt={16}
+      justifyContent="center"
       z-index={0}
       position="relative"
     >

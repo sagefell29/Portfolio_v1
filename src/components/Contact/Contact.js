@@ -15,6 +15,7 @@ const Contact = () => {
       justifyContent="center"
       alignItems="center"
       m={5}
+      mt={20}
       z-index={1}
       position="relative"
       style={colorMode === 'dark' ? St1 : St2}

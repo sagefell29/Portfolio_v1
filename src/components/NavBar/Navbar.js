@@ -1,45 +1,43 @@
-import { HStack, useColorMode } from '@chakra-ui/react';
+import { HStack } from '@chakra-ui/react';
 import {
   FiHome,
   FiPhone,
   FiCodesandbox,
   FiAward,
   FiBook,
+  FiTerminal,
 } from 'react-icons/fi';
 import { AiOutlineQuestion } from 'react-icons/ai';
-import { NavButton } from './NavButton';
-import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+import { NavButton } from './NavButton'; // You can use your existing NavButton component
 
 const Navbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
-    <HStack w="full" justifyContent="center">
       <HStack
-        spacing="1"
-        m={5}
-        bg={colorMode === 'dark' ? '#29232e' : '#F5F5F5'}
-        style={{ position: 'fixed', bottom: '15px' }}
-        borderRadius="7px"
-        zIndex={2}
-        _hover={{ lg: {
-          transform: 'scale(1.1)',
-          boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.75)',
-          transition: 'all 0.1s ease-in-out'}
-        }}
+        spacing={0}
+        justify="space-evenly"
+        w="100%"
+        align="center"
+        flexWrap="wrap"
+        position="fixed"
+        top={0}
+        left={0}
+        zIndex={1}
+        bg={'#29232e'}
+        boxShadow="lg"
       >
-        <NavButton label="Home" icon={<FiHome />} link="#Home" />
-        <NavButton label="About" icon={<AiOutlineQuestion />} link="#About" />
-        <NavButton label="Project" icon={<FiCodesandbox />} link="#Projects" />
+        <NavButton label="Home" icon={<FiHome />} path="/" />
+        <NavButton label="About Me" icon={<AiOutlineQuestion />} path="/about" />
+        <NavButton label="Projects" icon={<FiCodesandbox />} path="/projects" />
         <NavButton
-          label="Achievments and Certifications"
+          label="Achievements"
           icon={<FiAward />}
-          link="#Achievements"
+          path="/achievements"
         />
-        <NavButton label="Educational Background" icon={<FiBook />} link="#Education" />
-        <NavButton label="Contact Me" icon={<FiPhone />} link="#Contact" />
-        <ColorModeSwitcher />
+        <NavButton label="Education" icon={<FiBook />} path="/education" />
+        <NavButton label="Contact Me" icon={<FiPhone />} path="/contact" />
+        <NavButton label="Skills" icon={<FiTerminal />} path="/skills" />
       </HStack>
-    </HStack>
   );
 };
 

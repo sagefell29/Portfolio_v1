@@ -9,7 +9,7 @@ export const Education = () => {
       id="Education"
       justifyContent="center"
       m={5}
-      z-index={0}
+      mt={20}
       position="relative"
       mb={16}
     >
@@ -18,24 +18,16 @@ export const Education = () => {
       </Heading>
       <Stack
         justifyContent="center"
-        alignItems="center"
-        position="relative"
-        gap={3}
+        align="center"
+        spacing={5}
+        wrap="wrap"
       >
-        {education.map((Edu, i) => {
-          return (
-            <EducationItem
-              name={Edu.name}
-              logo={Edu.logo}
-              degree={Edu.degree}
-              stream={Edu.stream}
-              date={Edu.date}
-              location={Edu.location}
-              grade={Edu.grade}
-            />
-          );
-        })}
+        {education.map((edu, index) => (
+          <EducationItem key={index} {...edu} />
+        ))}
       </Stack>
     </Box>
   );
 };
+
+export default Education;

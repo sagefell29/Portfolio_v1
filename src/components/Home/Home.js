@@ -1,13 +1,23 @@
-import { Image, Text, HStack, Stack, VStack, Heading } from '@chakra-ui/react';
-import { FiLinkedin, FiFacebook, FiGithub, FiMail } from 'react-icons/fi';
-import { SiLeetcode, SiInstagram } from 'react-icons/si';
+import {
+  Image,
+  Text,
+  HStack,
+  Stack,
+  VStack,
+  Heading,
+  useColorMode,
+  Button,
+} from '@chakra-ui/react';
+import { FiFileText } from 'react-icons/fi';
 import React from 'react';
 import P from '../../Data/Images/Pro_p.webp';
 import { TypeWriter1 } from './Typed';
-import { LinkButton } from './LinkButton';
 import Transition from './Transition';
+import { St1, St2 } from '../St1';
 
 export const Home = () => {
+  const { colorMode } = useColorMode();
+
   return (
     <VStack
       id="Home"
@@ -23,6 +33,10 @@ export const Home = () => {
           h="30vh"
           alt="Rishi Kaushal's Profile Pic"
           borderRadius="25"
+            transition="0.15s"
+            _hover={{
+                filter: "grayscale(100%)"
+            }}
         />
         <Stack p="5" align="center" w="full" borderRadius={7}>
           <Heading>
@@ -37,37 +51,25 @@ export const Home = () => {
             <TypeWriter1 />
           </Text>
         </Stack>
-        <HStack justifyContent="center" borderRadius="7px" w="fit-content">
-          <LinkButton
-            label="GitHub"
-            link="https://github.com/sagefell29"
-            icon={<FiGithub />}
-          />
-          <LinkButton
-            label="LinkedIn"
-            link="https://www.linkedin.com/in/rishi-kaushal-133246212/"
-            icon={<FiLinkedin />}
-          />
-          <LinkButton
-            label="Mail"
-            link="mailto: rishi29work@gmail.com"
-            icon={<FiMail />}
-          />
-          <LinkButton
-            label="LeetCode"
-            link="https://leetcode.com/rishi29kaushal/"
-            icon={<SiLeetcode />}
-          />
-          <LinkButton
-            label="Instagram"
-            link="https://www.instagram.com/friendly_neighbourhood_goblin/"
-            icon={<SiInstagram />}
-          />
-          <LinkButton
-            label="Facebook"
-            link="https://www.facebook.com/rishi.kaushal.969/"
-            icon={<FiFacebook />}
-          />
+        <HStack
+          justifyContent="center"
+          borderRadius="7px"
+          w="fit-content"
+          spacing={3}
+          style={St1}
+        >
+          <Button
+            fontSize={{ md: 'lg', xs: 'xs' }}
+            as="a"
+            target="_blank"
+            href={
+              'https://drive.google.com/file/d/1RiTya05drFYD50tXj4pNdvYby8oT-BU1/view?usp=drive_link'
+            }
+            bg="transparent"
+          >
+            Resume
+            <FiFileText style={{ margin: '0px 0px 0px 6px' }}/>
+          </Button>
         </HStack>
       </VStack>
     </VStack>
