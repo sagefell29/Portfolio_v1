@@ -67,12 +67,12 @@ const ProjectCard = props => {
         <Divider />
         <CardFooter>
           <HStack spacing={5} w="full" justifyContent="center">
-            <ProjectButton
+            <LinkButton
               label="Github Link"
               link={props.repo}
               icon={<FiGithub />}
             />
-            <ProjectButton
+            <LinkButton
               label="Live Link"
               link={props.link}
               icon={<FiExternalLink />}
