@@ -1,8 +1,7 @@
-import { Button, Tooltip, useColorMode } from '@chakra-ui/react';
+import { Button, Tooltip } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 
 export const NavButton = ({ label, icon, path }) => {
-  const { colorMode } = useColorMode();
   const activeStyle = { color: 'teal' };
 
   return (

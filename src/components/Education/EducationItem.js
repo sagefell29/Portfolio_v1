@@ -3,14 +3,12 @@ import {
   Image,
   Text,
   VStack,
-  useColorMode,
   HStack,
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import { St1, St2 } from '../St1';
+import { St1 } from '../St1';
 
 const EducationItem = ({ name, logo, degree, stream, date, location, grade }) => {
-  const { colorMode } = useColorMode();
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (

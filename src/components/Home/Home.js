@@ -30,10 +30,10 @@ export const Home = () => {
           h="30vh"
           alt="Rishi Kaushal's Profile Pic"
           borderRadius="25"
-            transition="0.15s"
-            _hover={{
-                filter: "grayscale(100%)"
-            }}
+          transition="0.15s"
+          _hover={{
+            filter: 'grayscale(100%)',
+          }}
         />
         <Stack p="5" align="center" w="full" borderRadius={7}>
           <Heading>
@@ -63,9 +63,10 @@ export const Home = () => {
               'https://drive.google.com/file/d/1RiTya05drFYD50tXj4pNdvYby8oT-BU1/view?usp=drive_link'
             }
             bg="transparent"
+            textColor="white"
           >
             Resume
-            <FiFileText style={{ margin: '0px 0px 0px 6px' }}/>
+            <FiFileText style={{ margin: '0px 0px 0px 6px' }} color="white" />
           </Button>
         </HStack>
       </VStack>

@@ -5,7 +5,6 @@ import {
   Box,
   Divider,
   HStack,
-  Flex,
 } from '@chakra-ui/react';
 import React from 'react';
 import { St1 } from '../St1';
