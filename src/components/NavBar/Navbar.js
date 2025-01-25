@@ -35,8 +35,8 @@ const Navbar = () => {
           path="/achievements"
         />
         <NavButton label="Education" icon={<FiBook />} path="/education" />
-        <NavButton label="Contact Me" icon={<FiPhone />} path="/contact" />
         <NavButton label="Skills" icon={<FiTerminal />} path="/skills" />
+        <NavButton label="Contact Me" icon={<FiPhone />} path="/contact" />
       </HStack>
   );
 };

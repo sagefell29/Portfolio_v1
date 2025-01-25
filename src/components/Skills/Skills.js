@@ -96,14 +96,10 @@ const Skills = () => {
             </MyTooltip>
           </HStack>
         </VStack>
-
-        {/* Soft Skills Section */}
-        <VStack align="center" spacing={2}>
+        
+        {/* <VStack align="center" spacing={2}>
           <Text fontSize="lg" fontWeight="semibold">Soft Skills</Text>
           <HStack spacing={5}>
-            {/* <MyTooltip label="Leadership">
-              <GiLeader size={40} color="white" />
-            </MyTooltip> */}
             <MyTooltip label="Public Speaking">
               <MdPublic size={40} color="white" />
             </MyTooltip>
@@ -111,7 +107,7 @@ const Skills = () => {
               <IoIosPeople size={40} color="white" />
             </MyTooltip>
           </HStack>
-        </VStack>
+        </VStack> */}
       </VStack>
     </Box>
   );

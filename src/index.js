@@ -1,53 +1,29 @@
 import { ChakraProvider, extendTheme, ColorModeScript } from '@chakra-ui/react';
-import Navbar from './components/NavBar/Navbar';
-import { Home } from './components/Home/Home';
-import About from './components/About/About';
-import { Projects } from './components/Projects/Projects';
-import { Achievements } from './components/Achievements/Achievements';
-import Contact from './components/Contact/Contact';
-import StarryBackground from './components/bg/newbg';
-import { Education } from './components/Education/Education';
-import Skills from './components/Skills/Skills'
-import React, { StrictMode } from 'react';
+import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './app';
 
+// Create the container and root for rendering
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
+
+// Extend theme to include dark mode
 const theme = extendTheme({
   config: {
-    initialColorMode: "dark",
-    useSystemColorMode: false, // Disable auto-detection of system theme
+    initialColorMode: 'dark',
+    useSystemColorMode: false,
   },
 });
 
 root.render(
   <StrictMode>
+    {/* Set ColorModeScript for Chakra */}
     <ChakraProvider theme={theme}>
       <ColorModeScript />
-      <StarryBackground />
       <BrowserRouter>
-      <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/skills" element={<Skills />} />
-        </Routes>
+        <App />
       </BrowserRouter>
     </ChakraProvider>
   </StrictMode>
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://cra.link/PWA
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-

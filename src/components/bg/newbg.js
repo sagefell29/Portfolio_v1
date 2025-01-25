@@ -2,14 +2,10 @@ import React, { useEffect, useRef } from "react";
 
 const StarryBackground = () => {
   const canvasRef = useRef(null);
+  const starsRef = useRef([]);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    const stars = Array(100)
+  const generateStars = (canvas) => {
+    return Array(100)
       .fill()
       .map(() => ({
         x: Math.random() * canvas.width,
@@ -18,10 +14,28 @@ const StarryBackground = () => {
         alpha: Math.random(),
         speed: Math.random() * 0.02,
       }));
+  };
 
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+
+    // Function to adjust canvas size
+    const setCanvasSize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      // Re-generate stars when size changes
+      starsRef.current = generateStars(canvas);
+    };
+
+    // Initially set up the canvas
+    setCanvasSize();
+
+    // Function to draw the stars
     const drawStars = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      stars.forEach((star) => {
+      starsRef.current.forEach((star) => {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
@@ -29,8 +43,9 @@ const StarryBackground = () => {
       });
     };
 
+    // Function to update the alpha (brightness) of stars
     const updateStars = () => {
-      stars.forEach((star) => {
+      starsRef.current.forEach((star) => {
         star.alpha += star.speed;
         if (star.alpha > 1 || star.alpha < 0) {
           star.speed *= -1;
@@ -38,6 +53,7 @@ const StarryBackground = () => {
       });
     };
 
+    // Animation loop to keep stars animated
     const animate = () => {
       updateStars();
       drawStars();
@@ -48,11 +64,11 @@ const StarryBackground = () => {
 
     // Adjust canvas size on window resize
     const resize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      setCanvasSize();
     };
     window.addEventListener("resize", resize);
 
+    // Clean up on component unmount
     return () => window.removeEventListener("resize", resize);
   }, []);
 
@@ -60,11 +76,13 @@ const StarryBackground = () => {
     <canvas
       ref={canvasRef}
       style={{
-        position: "absolute",
+        position: "fixed", // Fixed positioning so background stays during scroll
         top: 0,
         left: 0,
         zIndex: -1,
-        backgroundColor: "#1a202c", // Match dark theme
+        backgroundColor: "#1a202c", // Ensure the dark background that matches theme
+        width: "100%",  // Full width of the viewport
+        height: "100%", // Full height of the viewport
       }}
     />
   );
