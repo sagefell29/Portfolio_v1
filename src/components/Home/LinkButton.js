@@ -2,7 +2,11 @@ import { Tooltip, useColorMode, Link, Button } from '@chakra-ui/react';
 import React from 'react';
 
 export const LinkButton = props => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
+  const borderColor = colorMode === 'light' ? 'black' : 'white';
+  if (!props.link) {
+    return null;
+  }
 
   return (
     <Tooltip label={props.label}>

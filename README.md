@@ -1,73 +1,31 @@
-# Portfolio_v1
-My First Portfolio
+# Portfolio 1.0
 
-# Getting Started with Create React App
+This is the first Portfolio I made, its hosted [here](https://www.rishikaushal.in).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎨 Design Inspiration
 
-## Available Scripts
+- I drew inspiration for this portfolio website from minimalist design principles.
+- The goal was to showcase the power of React's modular architecture while maintaining an aesthetically pleasing and user-friendly interface.
+- To achieve this, I leveraged Chakra UI for its rapid development capabilities and a wealth of pre-built, easy-to-use components. The design elements were inspired by a variety of sources, including Microsoft's welcome screen, Mac OS's dock as a navbar, and even the elegant frosted glass effect borrowed from another talented portfolio.
 
-In the project directory, you can run:
+## 🏗️ System Architecture and Design
 
-### `npm start`
+- The architecture of this portfolio website is intentionally designed for a seamless user experience. It features a single-page structure to eliminate component reloads and ensure a cohesive design throughout the site.
+- One notable feature is the integration of both light and dark modes, offering users a choice in their viewing experience. The modular architecture guided the development process, with different components meticulously crafted and only a single component visible at a given time.
+- The only exceptions are the modeSwitcher button and the floating Navbar, which were thoughtfully designed to always be visible.
+- By reusing components like buttons where appropriate, we ensured a consistent and efficient development process.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Development Process
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The journey to create this portfolio website began with the swift creation of a basic structure, but the design of the original home section presented its challenges, leading to multiple iterations. Substantial effort was dedicated to fine-tuning the CSS to achieve the captivating frosted glass effect and harmonize the various components, guaranteeing Design Unity across the site. As requirements evolved, the education section was introduced, further enriching the content and user experience.
 
-### `npm test`
+## 🌟 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React:** The foundation of this project, React's modular architecture empowered the creation of a dynamic and responsive website.
+- **Chakra UI:** Chakra UI played a pivotal role in expediting development, offering a rich library of pre-built components and styles.
 
-### `npm run build`
+## 🛠️ Further Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The journey doesn't end here! Future developments for this portfolio website include the addition of a skills section, allowing me to showcase my expertise. Additionally, there are plans to implement a small Node.js and Express server to store messages sent through the website, enhancing interactivity and engagement.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to explore this portfolio website and provide any feedback or suggestions. Your input is greatly appreciated! 🚀

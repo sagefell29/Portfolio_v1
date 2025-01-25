@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import { ProjectButton } from './ProjectButton';
+import { LinkButton } from "../Home/LinkButton"
 import { St1, St2 } from "../St1"
 
 const ProjectCard = props => {
