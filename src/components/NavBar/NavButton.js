@@ -22,7 +22,7 @@ export const NavButton = ({ label, icon, path }) => {
         _hover={{
           bg: '#29232e',
           color: '#00ffff',
-          boxShadow: '0 0 10px rgba(0, 255, 255, 0.2)',
+          // boxShadow: '0 0 10px rgba(0, 255, 255, 0.1)',
         }}
         transition="all 0.2s ease-in-out"
       >
