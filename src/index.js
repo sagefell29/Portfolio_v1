@@ -14,22 +14,26 @@ const theme = extendTheme({
     initialColorMode: 'dark',
     useSystemColorMode: false,
   },
+  fonts: {
+    heading: `'Inter', Didot`,
+    body: `'Inter', Didot`,
+  },
   styles: {
     global: {
       body: {
-        color: 'white', // Ensure all text is white
+        color: 'white',
       },
       'button, .chakra-button': {
-        color: 'white', // Make sure buttons have white text
-        backgroundColor: '#2d3748', // Customize background for buttons if needed
+        color: 'white',
+        backgroundColor: '#2d3748',
         _hover: {
-          backgroundColor: '#4a5568', // Button hover color in dark mode
+          backgroundColor: '#4a5568',
         },
       },
       'a, .chakra-link': {
-        color: 'white', // Ensure links are white
+        color: 'white', 
         _hover: {
-          color: '#a0aec0', // Slight hover color adjustment for links
+          color: '#a0aec0', 
         },
       },
     },

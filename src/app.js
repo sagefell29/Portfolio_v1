@@ -12,11 +12,8 @@ import Skills from './components/Skills/Skills';
 const App = () => {
   return (
     <>
-      {/* This ensures the background is rendered */}
       <StarryBackground />
-      {/* Navbar for navigation */}
       <Navbar />
-      {/* All of the Routes for different pages */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
