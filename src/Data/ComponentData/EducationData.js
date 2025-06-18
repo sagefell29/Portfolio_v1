@@ -11,7 +11,7 @@ export const education = [
         stream: "Computer Science Engineering with a Specialization in Bioinformatics",
         date: "2020-2024",
         location: "Vellore, Tamil Nadu",
-        grade: 8.32
+        grade: 8.55
     },
     {
         id: 1,
