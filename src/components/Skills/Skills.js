@@ -1,137 +1,76 @@
 import React from 'react';
 import { Box, VStack, Text } from '@chakra-ui/react';
 import { St1 } from '../St1';
-import { SiCplusplus, SiPython, SiJava, SiJavascript, SiPhp, SiMysql, SiHtml5, SiCss3 } from 'react-icons/si';
+import { SiCplusplus, SiPython, SiJava, SiJavascript, SiPhp, SiMysql, SiHtml5, SiCss3, SiFigma, SiFlask, SiTensorflow, SiApacheairflow, SiAmazonaws } from 'react-icons/si';
 import { FaReact, FaNodeJs, FaGit, FaGitSquare } from 'react-icons/fa';
 import { IoLogoBitbucket } from 'react-icons/io';
 import { BiTable } from 'react-icons/bi';
-import { SiFigma, SiFlask, SiTensorflow, SiApacheairflow, SiAmazonaws } from 'react-icons/si';
-import { MdPublic } from 'react-icons/md';
-import { IoIosPeople } from 'react-icons/io';
-import MyTooltip from './MyTooltip'; // Import the MyTooltip component
+import MyTooltip from './MyTooltip';
 
-const Skills = () => {
+const skillSections = [
+  {
+    title: 'Languages',
+    skills: [
+      { label: 'C/C++', icon: SiCplusplus },
+      { label: 'Python', icon: SiPython },
+      { label: 'Java', icon: SiJava },
+      { label: 'JavaScript', icon: SiJavascript },
+      { label: 'PHP', icon: SiPhp },
+      { label: 'MySQL', icon: SiMysql },
+      { label: 'HTML5', icon: SiHtml5 },
+      { label: 'CSS3', icon: SiCss3 },
+    ],
+  },
+  {
+    title: 'Frameworks and Packages',
+    skills: [
+      { label: 'React.js', icon: FaReact },
+      { label: 'Node.js', icon: FaNodeJs },
+      { label: 'Flask', icon: SiFlask },
+      { label: 'TensorFlow', icon: SiTensorflow },
+      { label: 'Apache Airflow', icon: SiApacheairflow },
+    ],
+  },
+  {
+    title: 'Technology',
+    skills: [
+      { label: 'Git', icon: FaGit },
+      { label: 'GitHub', icon: FaGitSquare },
+      { label: 'BitBucket', icon: IoLogoBitbucket },
+      { label: 'Figma', icon: SiFigma },
+      { label: 'Tableau', icon: BiTable },
+      { label: 'AWS', icon: SiAmazonaws },
+    ],
+  },
+];
 
-  return (
-    <Box id="Skills" m={5} mt={28} style={St1}>
-      <VStack p={5} spacing={5} align="center">
-        <Text fontSize="3xl" fontWeight="bold">
-          My Skills
-        </Text>
-
-        {/* Languages Section */}
-        <VStack align="center" spacing={2}>
-          <Text fontSize="lg" fontWeight="semibold">Languages</Text>
-          <Box 
-            display="flex" 
-            flexWrap="wrap" 
-            justifyContent="center" 
+const Skills = () => (
+  <Box id="Skills" m={5} mt={28} style={St1}>
+    <VStack p={5} spacing={5} align="center">
+      <Text fontSize="3xl" fontWeight="bold">
+        My Skills
+      </Text>
+      {skillSections.map(section => (
+        <VStack key={section.title} align="center" spacing={2}>
+          <Text fontSize="lg" fontWeight="semibold">{section.title}</Text>
+          <Box
+            display="flex"
+            flexWrap="wrap"
+            justifyContent="center"
             gap={5}
             maxW="100%"
             overflow="hidden"
           >
-            <MyTooltip label="C/C++">
-              <SiCplusplus size={40} color='white'/>
-            </MyTooltip>
-            <MyTooltip label="Python">
-              <SiPython size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="Java">
-              <SiJava size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="JavaScript">
-              <SiJavascript size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="PHP">
-              <SiPhp size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="MySQL">
-              <SiMysql size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="HTML5">
-              <SiHtml5 size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="CSS3">
-              <SiCss3 size={40} color="white" />
-            </MyTooltip>
+            {section.skills.map(({ label, icon: Icon }) => (
+              <MyTooltip key={label} label={label}>
+                <Icon size={40} color="white" />
+              </MyTooltip>
+            ))}
           </Box>
         </VStack>
-
-        {/* Frameworks and Packages Section */}
-        <VStack align="center" spacing={2}>
-          <Text fontSize="lg" fontWeight="semibold">Frameworks and Packages</Text>
-          <Box 
-            display="flex" 
-            flexWrap="wrap" 
-            justifyContent="center" 
-            gap={5}
-            maxW="100%"
-            overflow="hidden"
-          >
-            <MyTooltip label="React.js">
-              <FaReact size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="Node.js">
-              <FaNodeJs size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="Flask">
-              <SiFlask size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="TensorFlow">
-              <SiTensorflow size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="Apache Airflow">
-              <SiApacheairflow size={40} color="white" />
-            </MyTooltip>
-          </Box>
-        </VStack>
-
-        {/* Technology Section */}
-        <VStack align="center" spacing={2}>
-          <Text fontSize="lg" fontWeight="semibold">Technology</Text>
-          <Box 
-            display="flex" 
-            flexWrap="wrap" 
-            justifyContent="center" 
-            gap={5}
-            maxW="100%"
-            overflow="hidden"
-          >
-            <MyTooltip label="Git">
-              <FaGit size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="GitHub">
-              <FaGitSquare size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="BitBucket">
-              <IoLogoBitbucket size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="Figma">
-              <SiFigma size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="Tableau">
-              <BiTable size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="AWS">
-              <SiAmazonaws size={40} color="white" />
-            </MyTooltip>
-          </Box>
-        </VStack>
-        
-        {/* <VStack align="center" spacing={2}>
-          <Text fontSize="lg" fontWeight="semibold">Soft Skills</Text>
-          <HStack spacing={5}>
-            <MyTooltip label="Public Speaking">
-              <MdPublic size={40} color="white" />
-            </MyTooltip>
-            <MyTooltip label="Teamwork">
-              <IoIosPeople size={40} color="white" />
-            </MyTooltip>
-          </HStack>
-        </VStack> */}
-      </VStack>
-    </Box>
-  );
-};
+      ))}
+    </VStack>
+  </Box>
+);
 
 export default Skills;
