@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, VStack, Text, HStack } from '@chakra-ui/react';
+import { Box, VStack, Text } from '@chakra-ui/react';
 import { St1 } from '../St1';
 import { SiCplusplus, SiPython, SiJava, SiJavascript, SiPhp, SiMysql, SiHtml5, SiCss3 } from 'react-icons/si';
 import { FaReact, FaNodeJs, FaGit, FaGitSquare } from 'react-icons/fa';
@@ -22,7 +22,14 @@ const Skills = () => {
         {/* Languages Section */}
         <VStack align="center" spacing={2}>
           <Text fontSize="lg" fontWeight="semibold">Languages</Text>
-          <HStack spacing={5}>
+          <Box 
+            display="flex" 
+            flexWrap="wrap" 
+            justifyContent="center" 
+            gap={5}
+            maxW="100%"
+            overflow="hidden"
+          >
             <MyTooltip label="C/C++">
               <SiCplusplus size={40} color='white'/>
             </MyTooltip>
@@ -47,13 +54,20 @@ const Skills = () => {
             <MyTooltip label="CSS3">
               <SiCss3 size={40} color="white" />
             </MyTooltip>
-          </HStack>
+          </Box>
         </VStack>
 
         {/* Frameworks and Packages Section */}
         <VStack align="center" spacing={2}>
           <Text fontSize="lg" fontWeight="semibold">Frameworks and Packages</Text>
-          <HStack spacing={5}>
+          <Box 
+            display="flex" 
+            flexWrap="wrap" 
+            justifyContent="center" 
+            gap={5}
+            maxW="100%"
+            overflow="hidden"
+          >
             <MyTooltip label="React.js">
               <FaReact size={40} color="white" />
             </MyTooltip>
@@ -69,13 +83,20 @@ const Skills = () => {
             <MyTooltip label="Apache Airflow">
               <SiApacheairflow size={40} color="white" />
             </MyTooltip>
-          </HStack>
+          </Box>
         </VStack>
 
         {/* Technology Section */}
         <VStack align="center" spacing={2}>
           <Text fontSize="lg" fontWeight="semibold">Technology</Text>
-          <HStack spacing={5}>
+          <Box 
+            display="flex" 
+            flexWrap="wrap" 
+            justifyContent="center" 
+            gap={5}
+            maxW="100%"
+            overflow="hidden"
+          >
             <MyTooltip label="Git">
               <FaGit size={40} color="white" />
             </MyTooltip>
@@ -94,7 +115,7 @@ const Skills = () => {
             <MyTooltip label="AWS">
               <SiAmazonaws size={40} color="white" />
             </MyTooltip>
-          </HStack>
+          </Box>
         </VStack>
         
         {/* <VStack align="center" spacing={2}>
