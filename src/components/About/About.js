@@ -4,7 +4,6 @@ import {
   VStack,
   Box,
   Divider,
-  HStack,
   Container,
   useBreakpointValue,
 } from '@chakra-ui/react';

@@ -15,7 +15,7 @@ const TimelineItem = ({ title, position, org, time, location, index, isMobile })
         p={6}
         border="1px solid rgba(255, 255, 255, 0.2)"
         boxShadow="0 4px 6px rgba(0, 0, 0, 0.1)"
-        transition="all 0.3s ease"
+        transition="all 0.7s ease"
         _hover={{
           transform: "translateY(-2px)",
           boxShadow: "0 8px 25px rgba(0, 0, 0, 0.15)",
