@@ -28,7 +28,7 @@ export const experience = [
     id: 2,
     cert: EXT,
     title: 'Jamrio',
-    position: 'Backend DeveloperIntern',
+    position: 'Backend Developer',
     field: 'Backend Development with Sequelize and Express',
     org: 'Jamrio Technologies Pvt. Ltd.',
     time: 'August 2023 - October 2023',
